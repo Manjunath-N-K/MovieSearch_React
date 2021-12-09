@@ -231,11 +231,11 @@ Movies
 .movie:hover .movie-info {
   transform: translateY(0);
 }
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .movies {
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   }
-}
+} */
 
 /*
 =============== 
@@ -250,9 +250,11 @@ Single Movie
   display: grid;
   gap: 2rem;
 }
-.single-movie img {
+.single-movie-img {
   width: 100%;
+  height: 400px;
   display: block;
+  object-fit: cover;
 }
 .single-movie p {
   max-width: 35em;
@@ -270,11 +272,11 @@ Single Movie
   margin-top: 0.5rem;
   letter-spacing: var(--spacing);
 }
-@media screen and (min-width: 992px) {
+/* @media screen and (min-width: 992px) {
   .single-movie {
     grid-template-columns: 1fr 2fr;
   }
-}
+} */
 .page-error {
   text-align: center;
   padding: 2rem;
